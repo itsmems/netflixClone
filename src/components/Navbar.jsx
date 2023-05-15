@@ -28,6 +28,9 @@ const Navbar = () => {
             <button onClick={handleLogout} className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>Logout</button>
       </div>:
         <div>
+          <Link to='/search'>
+            <input className='mr-5 p-0.5 rounded text-red-600' type="text" />
+        </Link>
         <Link to='/signin'>
           <button className='text-white pr-4'>Sign In</button>
         </Link>
